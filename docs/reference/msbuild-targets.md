@@ -476,7 +476,7 @@ Restore creates the following files in the build `obj` folder:
 
 ### Restoring and building with one MSBuild command
 
-Due to the fact that NuGet can restore packages that bring down MSBuild targets and props, the restore and build evaluations are run with different global properties.
+Due to the fact that NuGet can restore packages that in turn contain MSBuild targets and props, the restore and build evaluations are run with different global properties.
 This means that the following will have an unpredictable and often incorrect behavior.
 
 ```cli
